@@ -1,221 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Kafil Uddin | Chakomoni Shop</title>
-  <meta name="description" content="Md. Kafil Uddin – Owner of Chakomoni Shop | Credible Shopping" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f3d32; /* dark green based on logo */
-      color: #e5e7eb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .card {
-      background: #0b2e26; /* card dark green */
-      width: 100%;
-      max-width: 420px;
-      padding: 24px;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      text-align: center;
-    }
-    .logo {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 12px;
-      display: none; /* optional, user can enable */
-    }
-    .profile {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      background: #134e42; /* muted green */
-      margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
-      color: #9fbfb6;
-      overflow: hidden;
-    }
-    h1 {
-      font-size: 22px;
-      margin: 0;
-    }
-    .title {
-      font-size: 14px;
-      color: #9fbfb6;
-      margin: 6px 0 20px;
-    }
-    .btn {
-      display: block;
-      text-decoration: none;
-      background: #d4af37; /* gold */
-      color: #0b2e26;
-      padding: 12px;
-      border-radius: 10px;
-      margin-bottom: 12px;
-      font-weight: bold;
-transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-    .btn::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
-      transition: all 0.5s ease;
-    }
-    .btn:hover::after {
-      left: 100%;
-    }
-    .btn:hover {
-      background: #b8962e; /* darker gold */
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 10px 20px rgba(212,175,55,0.35);
-    }
-    .btn.secondary {
-      background: #134e42;
-      color: #e5e7eb;
-    }
-    .btn.secondary:hover {
-      background: #1b6b5a;
-      box-shadow: 0 10px 20px rgba(27,107,90,0.4);
-      transform: translateY(-2px) scale(1.02);
-    }
-    .btn.add-contact {
-      background: linear-gradient(120deg, #d4af37, #b8962e);
-      color: #0b2e26;
-    }
-    .btn.add-contact:hover {
-      box-shadow: 0 12px 24px rgba(212,175,55,0.45);
-      transform: translateY(-3px) scale(1.03);
-    }
-    .section {
-      margin-top: 20px;
-    }
-    .section h3 {
-      font-size: 14px;
-      color: #9fbfb6;
-      margin-bottom: 10px;
-    }
-    .social a {
-      display: block;
-      text-decoration: none;
-      color: #e5e7eb;
-      background: #0b2e26; /* card dark green */
-      border: 1px solid #1b6b5a;
-      padding: 10px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-    footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #7fb3a6;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: linear-gradient(120deg, #d4af37, #b8962e, #d4af37);
-      color: #0b2e26;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-      animation: pulseGlow 2s infinite;
-    }
-    @keyframes pulseGlow {
-      0% {
-        box-shadow: 0 0 0 0 rgba(212,175,55,0.6);
-        transform: scale(1);
-      }
-      70% {
-        box-shadow: 0 0 0 12px rgba(212,175,55,0);
-        transform: scale(1.05);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(212,175,55,0);
-        transform: scale(1);
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect with me - Md. Kafil Uddin</title>
+    <meta name="description" content="Md. Kafil Uddin – Owner of Chakomoni Shop | Credible Shopping" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f3d32;
+            /* dark green based on logo */
+            color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #0b2e26;
+            /* card dark green */
+            width: 100%;
+            max-width: 420px;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 12px;
+            display: none;
+            /* optional, user can enable */
+        }
+
+        .profile {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: #134e42;
+            /* muted green */
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #9fbfb6;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #9fbfb6;
+            margin: 6px 0 20px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            background: #d4af37;
+            /* gold */
+            color: #0b2e26;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: all 0.5s ease;
+        }
+
+        .btn:hover::after {
+            left: 100%;
+        }
+
+        .btn:hover {
+            background: #b8962e;
+            /* darker gold */
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.35);
+        }
+
+        .btn.secondary {
+            background: #134e42;
+            color: #e5e7eb;
+        }
+
+        .btn.secondary:hover {
+            background: #1b6b5a;
+            box-shadow: 0 10px 20px rgba(27, 107, 90, 0.4);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .btn.add-contact {
+            background: linear-gradient(120deg, #d4af37, #b8962e);
+            color: #0b2e26;
+        }
+
+        .btn.add-contact:hover {
+            box-shadow: 0 12px 24px rgba(212, 175, 55, 0.45);
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h3 {
+            font-size: 14px;
+            color: #9fbfb6;
+            margin-bottom: 10px;
+        }
+
+        .social a {
+            display: block;
+            text-decoration: none;
+            color: #e5e7eb;
+            background: #0b2e26;
+            /* card dark green */
+            border: 1px solid #1b6b5a;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #7fb3a6;
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: linear-gradient(120deg, #d4af37, #b8962e, #d4af37);
+            color: #0b2e26;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            animation: pulseGlow 2s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6);
+                transform: scale(1);
+            }
+
+            70% {
+                box-shadow: 0 0 0 12px rgba(212, 175, 55, 0);
+                transform: scale(1.05);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="card">
-    <img class="logo" src="" alt="Your Logo" />
-    <div class="profile" id="profile-placeholder">👤</div>
+    <div class="card">
+        <img class="logo" src="" alt="Your Logo" />
+        <div class="profile" id="profile-placeholder">👤</div>
 
-    <h1>Md. Kafil Uddin</h1>
-    <div class="title">Owner · Chakomoni Shop – Credible Shopping</div>
+        <h1>Md. Kafil Uddin</h1>
+        <div class="title">Owner · Chakomoni Shop – Credible Shopping<br><br><span style="color:#d4af37;">Call
+                (Personal): 01795-753302<br>Call (Business): 01975-753302</span></div>
 
-    <a class="btn" href="tel:+8801975753302">📞 Call (Business)</a>
-    <a class="btn secondary" href="tel:+8801795753302">📞 Call (Personal)</a>
+        <a class="btn" href="tel:+8801975753302">📞 Call (Business)</a>
+        <a class="btn secondary" href="tel:+8801795753302">📞 Call (Personal)</a>
 
-    <a class="btn" href="https://wa.me/8801975753302">💬 WhatsApp Business</a>
-    <a class="btn secondary" href="https://wa.me/8801795753302">💬 WhatsApp</a>
+        <a class="btn" href="https://wa.me/8801975753302">💬 WhatsApp Business</a>
+        <a class="btn secondary" href="https://wa.me/8801795753302">💬 WhatsApp</a>
 
-    <a class="btn" href="mailto:info.chakomonishopbd@gmail.com">✉️ Email</a>
+        <a class="btn" href="mailto:info.chakomonishopbd@gmail.com">✉️ Email</a>
 
-    <!-- Add to Contacts -->
-    <a class="btn add-contact" href="#" onclick="downloadVCard()">➕ Add to Contacts</a>
+        <!-- Add to Contacts -->
+        <a class="btn add-contact" href="#" onclick="downloadVCard()">➕ Add to Contacts</a>
 
-    <div class="section">
-      <h3>Social Profiles</h3>
-      <div class="social">
-        <a href="https://www.facebook.com/share/188H5XXMhk/">Facebook (Personal)</a>
-        <a href="https://www.facebook.com/share/1KxikZVnA9/">Facebook Page (Business)</a>
-        <a href="https://www.threads.com/@chakomoni_shop">Instagram / Threads</a>
-        <a href="https://www.linkedin.com/in/md-kafil-uddin-8b3b22395">LinkedIn</a>
-        <a href="#" id="website-link" style="display:none;">Website</a>
-      </div>
+        <div class="section">
+            <h3>Social Profiles</h3>
+            <div class="social">
+                <a href="https://www.facebook.com/share/188H5XXMhk/">Facebook Profile</a>
+                <a href="https://www.facebook.com/share/1KxikZVnA9/">Chakomoni Shop (fb page)</a>
+                <a href="https://www.threads.com/@chakomoni_shop">Instagram</a>
+                <a href="https://www.linkedin.com/in/md-kafil-uddin-8b3b22395">LinkedIn Profile</a>
+                <a href="https://github.com/kafil302" id="website-link" style="display: ;">GitHub Profile</a>
+            </div>
+        </div>
+
+        <footer>
+            <span class="cta">Click the buttons above to connect</span>
+        </footer>
     </div>
 
-    <footer>
-      <span class="cta">Tap to Connect</span>
-    </footer>
-  </div>
+    <script>
+        // Future-ready website link
+        const websiteURL = ''; // Add website link here when available
+        if (websiteURL) {
+            const siteLink = document.getElementById('website-link');
+            siteLink.href = websiteURL;
+            siteLink.style.display = 'block';
+        }
 
-  <script>
-    // Future-ready website link
-    const websiteURL = ''; // Add website link here when available
-    if(websiteURL){
-      const siteLink = document.getElementById('website-link');
-      siteLink.href = websiteURL;
-      siteLink.style.display = 'block';
-    }
+        // Profile photo upload (user can set later)
+        function setProfileImage(url) {
+            const profileDiv = document.getElementById('profile-placeholder');
+            profileDiv.innerHTML = '';
+            profileDiv.style.backgroundImage = `url(${url})`;
+            profileDiv.style.backgroundSize = 'cover';
+            profileDiv.style.backgroundPosition = 'center';
+        }
 
-    // Profile photo upload (user can set later)
-    function setProfileImage(url){
-      const profileDiv = document.getElementById('profile-placeholder');
-      profileDiv.innerHTML = '';
-      profileDiv.style.backgroundImage = `url(${url})`;
-      profileDiv.style.backgroundSize = 'cover';
-      profileDiv.style.backgroundPosition = 'center';
-    }
+        // Logo upload function
+        function setLogo(url) {
+            const logo = document.querySelector('.logo');
+            logo.src = url;
+            logo.style.display = 'block';
+        }
 
-    // Logo upload function
-    function setLogo(url){
-      const logo = document.querySelector('.logo');
-      logo.src = url;
-      logo.style.display = 'block';
-    }
-
-    // Example: setProfileImage('path-to-your-photo.jpg');
-    // Example: setLogo('path-to-your-logo.png');
-      // === Add to Contacts (vCard) ===
-    function downloadVCard(){
-      const vcard = `BEGIN:VCARD
+        // Example: setProfileImage('path-to-your-photo.jpg');
+        // Example: setLogo('path-to-your-logo.png');
+        // === Add to Contacts (vCard) ===
+        function downloadVCard() {
+            const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Uddin;Md. Kafil;;;
 FN:Md. Kafil Uddin
@@ -226,18 +257,20 @@ TEL;TYPE=CELL:+8801795753302
 EMAIL:info.chakomonishopbd@gmail.com
 NOTE:Credible Shopping
 END:VCARD`;
-const blob = new Blob([vcard], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Md_Kafil_Uddin.vcf';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
-// Profile image from images folder
-    setProfileImage("images/kafil.png");
-</script>
+            const blob = new Blob([vcard], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Md_Kafil_Uddin.vcf';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        // Profile image from images folder
+        setProfileImage("images/kafil.png");
+        // setLogo("images/logo.png");
+    </script>
 </body>
+
 </html>
