@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Connect with me - Md. Kafil Uddin</title>
     <meta name="description" content="Md. Kafil Uddin – Owner of Chakomoni Shop | Credible Shopping" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0F4A3C">
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
     <style>
         body {
             margin: 0;
@@ -178,6 +185,27 @@
                 transform: scale(1);
             }
         }
+
+        .install-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            background: #0F4A3C;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        .install-btn:hover {
+            opacity: 0.9;
+        }
     </style>
 </head>
 
@@ -270,6 +298,28 @@ END:VCARD`;
         // Profile image from images folder
         setProfileImage("images/kafil.png");
         // setLogo("images/logo.png");
+    </script>
+    <footer>
+        <button id="installBtn" class="install-btn" hidden>
+            📲 Install App
+        </button>
+    </footer>
+    <script>
+        let deferredPrompt;
+        const installBtn = document.getElementById("installBtn");
+
+        window.addEventListener("beforeinstallprompt", (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.hidden = false;
+        });
+
+        installBtn.addEventListener("click", async () => {
+            installBtn.hidden = true;
+            deferredPrompt.prompt();
+            await deferredPrompt.userChoice;
+            deferredPrompt = null;
+        });
     </script>
 </body>
 
