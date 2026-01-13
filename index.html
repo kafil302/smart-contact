@@ -15,40 +15,47 @@
     </script>
     <style>
         /* ===== App Layout Fix ===== */
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  background: #0b2e26; /* brand green */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        /* ===== সংশোধিত লেআউট ===== */
+        html,
         body {
+            width: 100%;
+            height: 100%;
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0f3d32;
-            /* dark green based on logo */
-            color: #e5e7eb;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            padding: 0;
+            background: #0b2e26;
+        }
+
+        body {
+            display: block;
+            /* Flex সরিয়ে Block দিন যাতে ওপর থেকে শুরু হয় */
+            overflow-y: auto;
+            /* স্ক্রল করার সুবিধা দেবে */
         }
 
         .card {
             background: #0b2e26;
-            /* card dark green */
             width: 100%;
-            max-width: 420px;
+            max-width: 600px;
+            /* ডেস্কটপে দেখার জন্য একটি লিমিট, মোবাইলে এটি অটো ফুল উইডথ হবে */
+            margin: 0 auto;
+            /* মাঝখানে রাখার জন্য */
             padding: 24px;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
+            /* প্যাডিং যেন উইডথ না বাড়ায় */
+            min-height: 100vh;
+            /* পুরো স্ক্রিন হাইট নিবে */
+            border-radius: 0;
+            /* কোণার খালি জায়গা দূর করতে রেডিয়াস ০ করে দিন */
+            box-shadow: none;
+            /* ফুল স্ক্রিনে শ্যাডোর দরকার নেই */
             text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                border-radius: 0;
+                max-width: 100%;
+            }
         }
 
         .logo {
